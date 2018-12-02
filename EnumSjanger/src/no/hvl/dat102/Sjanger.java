@@ -5,7 +5,7 @@ public enum Sjanger {
 	private int nr;
 
 	private Sjanger(int n) { // Konstruktør
-		this.nr = n;
+		this.nr = n; //         Ikke ordinaltallet
 	}
 
 	public int getNr() {

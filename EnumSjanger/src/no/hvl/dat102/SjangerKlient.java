@@ -25,11 +25,11 @@ public class SjangerKlient {
          
 		if (sjanger1 != null && sjanger2 != null) {
 			if (sjanger1.compareTo(sjanger2) < 0) {
-				System.out.print(sjanger1 + " ");
-				System.out.println(sjanger1.ordinal());
+				System.out.print(sjanger1 + " kommer foer ");
+				System.out.println("ordinaltallet er: " + sjanger1.ordinal());
 			} else {
-				System.out.println(sjanger2 + " ");
-				System.out.println(sjanger2.ordinal());
+				System.out.print(sjanger2 + " kommer foer, ");
+				System.out.println("ordinaltallet er: " + sjanger2.ordinal());
 			}
 		}
 
