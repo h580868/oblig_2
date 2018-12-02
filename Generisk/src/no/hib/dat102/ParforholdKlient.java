@@ -3,7 +3,7 @@ package no.hib.dat102;
 public class ParforholdKlient {  
 public static void main(String[] args) {
     Par<String> strPar = new Par<String>("Ole", "Kari");   
-    Par<Integer> intPar = new Par<Integer>(2016, 2017);
+    Par<Integer> intPar = new Par<Integer>(2018, 2019);
     
     System.out.println(strPar);
     String maksStreng = strPar.maks();
