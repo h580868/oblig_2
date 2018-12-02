@@ -1,6 +1,6 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
-import no.hib.dat102.adt.ParForhold;
+import no.hvl.dat102.adt.ParForhold;
 
 public class Par<T extends Comparable<T>> implements ParForhold<T> {
 	private T foerste;
