@@ -40,8 +40,7 @@ public class TabellStabel<T> implements StabelADT<T> {
             utvid();
         }
 
-        stabel[topp] = element;
-        topp++;
+        //TODO
     }
 
     /**
@@ -52,11 +51,7 @@ public class TabellStabel<T> implements StabelADT<T> {
     @Override
     public T pop() {
         T resultat = null;
-        if (!erTom()) {
-            resultat = stabel[topp - 1];
-            topp--;
-            stabel[topp] = null;
-        }
+        //TODO
         return resultat;
     }
 
