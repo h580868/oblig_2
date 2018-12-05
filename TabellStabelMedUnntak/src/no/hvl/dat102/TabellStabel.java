@@ -1,6 +1,6 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
-import no.hib.dat102.adt.StabelADT;
+import no.hvl.dat102.adt.StabelADT;
 
 //  Tabellimplementasjon av en stabel.
 //********************************************************************
@@ -32,11 +32,7 @@ public class TabellStabel<T> implements StabelADT<T> {
 	 *******************************************************************/
 	@Override
 	public void push(T element) {
-		if (antall() == stabel.length)
-			utvid();
-
-		stabel[topp] = element;
-		topp++;
+		//TODO
 	}
 
 	/*******************************************************************
@@ -46,10 +42,9 @@ public class TabellStabel<T> implements StabelADT<T> {
 	 *******************************************************************/
 	@Override
 	public T pop() throws EmptyCollectionException {
-		if (erTom())
-			throw new EmptyCollectionException("Stabel");
-
-		topp--;
+		//TODO
+		
+		
 		T result = stabel[topp];
 		stabel[topp] = null;
 
@@ -58,7 +53,7 @@ public class TabellStabel<T> implements StabelADT<T> {
 
 	/*******************************************************************
 	 * Returnerer toppelementet uten å fjerne det. Hvis stabelen er tom fra
-	 * før, så returneres null
+	 * før,så returneres null
 	 *******************************************************************/
 	@Override
 	public T peek() throws EmptyCollectionException {

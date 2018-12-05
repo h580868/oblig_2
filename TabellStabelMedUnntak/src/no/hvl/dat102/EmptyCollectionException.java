@@ -1,4 +1,4 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 //********************************************************************
 //  EmptyCollectionException.java   //
 //  Representerer situasjonen når samlingen er tom

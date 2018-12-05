@@ -1,7 +1,7 @@
-package no.hib.dat102.klient;
+package no.hvl.dat102.klient;
 
-import no.hib.dat102.TabellStabel;
-import no.hib.dat102.EmptyCollectionException;
+import no.hvl.dat102.EmptyCollectionException;
+import no.hvl.dat102.TabellStabel;
 
 public class StabelKlient {
 	public static void main(String[] args) {

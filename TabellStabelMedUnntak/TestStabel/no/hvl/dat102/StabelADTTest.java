@@ -1,11 +1,13 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import no.hib.dat102.adt.StabelADT;
+import no.hvl.dat102.EmptyCollectionException;
+import no.hvl.dat102.TabellStabel;
+import no.hvl.dat102.adt.StabelADT;
 
 /**
  * Test for StackADT.
