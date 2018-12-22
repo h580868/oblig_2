@@ -1,4 +1,4 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
 public class Person implements Comparable<Person> {
 	private String fornavn;
