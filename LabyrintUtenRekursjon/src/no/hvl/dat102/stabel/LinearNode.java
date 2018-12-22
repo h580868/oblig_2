@@ -1,4 +1,4 @@
-package no.hib.dat102.stabel;
+package no.hvl.dat102.stabel;
 
 //************************************************************
 ///  Representerer en node.

@@ -1,6 +1,6 @@
-package no.hib.dat102.stabel;
+package no.hvl.dat102.stabel;
 
-import no.hib.dat102.adt.*;
+import no.hvl.dat102.adt.*;
 
 public class KjedetStabel<T> implements StabelADT<T> {
 	private LinearNode<T> topp;

@@ -1,8 +1,8 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
-import no.hib.dat102.adt.StabelADT;
-import no.hib.dat102.stabel.EmptyCollectionException;
-import no.hib.dat102.stabel.KjedetStabel;
+import no.hvl.dat102.adt.StabelADT;
+import no.hvl.dat102.stabel.EmptyCollectionException;
+import no.hvl.dat102.stabel.KjedetStabel;
 
 public class LabyrintSpill {
 	private Labyrint labyrint;

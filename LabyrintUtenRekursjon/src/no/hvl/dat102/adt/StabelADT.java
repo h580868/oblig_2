@@ -1,5 +1,5 @@
-package no.hib.dat102.adt;
-import no.hib.dat102.stabel.EmptyCollectionException;
+package no.hvl.dat102.adt;
+import no.hvl.dat102.stabel.EmptyCollectionException;
 
 public interface StabelADT<T> {
 
