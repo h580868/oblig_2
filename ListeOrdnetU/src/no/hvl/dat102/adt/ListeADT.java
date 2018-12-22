@@ -1,4 +1,4 @@
-package no.hib.dat102.adt;
+package no.hvl.dat102.adt;
 
 /**
  * Definerer interface til en generell liste. Spesielle typer av lister vil bli

@@ -1,4 +1,4 @@
-package no.hib.dat102.kjedet; 
+package no.hvl.dat102.kjedet; 
 
 public class LinearNode<T> {
 

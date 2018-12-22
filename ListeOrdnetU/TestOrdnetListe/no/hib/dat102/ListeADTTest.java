@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import no.hib.dat102.kjedet.KjedetOrdnetListe;
+import no.hvl.dat102.kjedet.KjedetOrdnetListe;
 
 public class ListeADTTest {
 

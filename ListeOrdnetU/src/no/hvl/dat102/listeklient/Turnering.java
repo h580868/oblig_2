@@ -1,8 +1,8 @@
-package no.hib.dat102.listeklient;
+package no.hvl.dat102.listeklient;
 
 import java.util.Scanner;
 
-import no.hib.dat102.kjedet.KjedetOrdnetListe;
+import no.hvl.dat102.kjedet.KjedetOrdnetListe;
 
 //Turnering.java
 //
