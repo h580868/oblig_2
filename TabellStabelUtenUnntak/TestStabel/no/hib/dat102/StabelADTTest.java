@@ -7,7 +7,8 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
-import no.hib.dat102.adt.StabelADT;
+import no.hvl.dat102.TabellStabel;
+import no.hvl.dat102.adt.StabelADT;
 
 //package 
 

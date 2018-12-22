@@ -1,6 +1,6 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
-import no.hib.dat102.adt.StabelADT;
+import no.hvl.dat102.adt.StabelADT;
 
 /**
  * Tabellimplementasjon av en stabel.
