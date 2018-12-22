@@ -15,16 +15,13 @@ public class KjedetStabel<T> implements StabelADT<T> {
 	@Override
 	public void push(T el) {
 		LinearNode<T> nynode = new LinearNode<T>(el);
-		nynode.setNeste(topp);
-		topp = nynode;
-		antall++;
+		//TODO
 	}
 
 	@Override
-	public T pop() throws EmptyCollectionException {
-		if (erTom())
-			throw new EmptyCollectionException("stabel");
-
+	public T pop()  {
+		//TODO
+		
 		T resultat = topp.getElement();
 		topp = topp.getNeste();
 		antall--;
@@ -32,7 +29,7 @@ public class KjedetStabel<T> implements StabelADT<T> {
 	}
 
 	@Override
-	public T peek() throws EmptyCollectionException {
+	public T peek() {
 		if (erTom())
 			throw new EmptyCollectionException("stabel");
 		

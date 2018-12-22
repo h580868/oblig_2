@@ -32,11 +32,7 @@ public class TabellStabel<T> implements StabelADT<T> {
 	 *******************************************************************/
 	@Override
 	public void push(T element) {
-		if (antall() == stabel.length)
-			utvid();
-
-		stabel[topp] = element;
-		topp++;
+		//TODO
 	}
 
 	/*******************************************************************
@@ -46,10 +42,7 @@ public class TabellStabel<T> implements StabelADT<T> {
 	 *******************************************************************/
 	@Override
 	public T pop() throws EmptyCollectionException {
-		if (erTom())
-			throw new EmptyCollectionException("Stabel");
-
-		topp--;
+		//TODO
 		T result = stabel[topp];
 		stabel[topp] = null;
 
