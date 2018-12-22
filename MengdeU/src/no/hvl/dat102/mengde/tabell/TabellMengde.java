@@ -1,10 +1,9 @@
-package no.hib.dat102.mengde.tabell;
-
-import no.hib.dat102.mengde.adt.*;
-
+package no.hvl.dat102.mengde.tabell;
 
 import java.util.Iterator;
 import java.util.Random;
+
+import no.hvl.dat102.mengde.adt.*;
 
 public class TabellMengde<T> implements MengdeADT<T> {
 	// ADT-en Mengde implementert som tabell

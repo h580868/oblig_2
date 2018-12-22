@@ -1,4 +1,4 @@
-package no.hib.dat102.mengde.adt;
+package no.hvl.dat102.mengde.adt;
 
 import java.util.Iterator;
 

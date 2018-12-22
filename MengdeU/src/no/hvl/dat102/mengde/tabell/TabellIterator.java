@@ -1,4 +1,4 @@
-package no.hib.dat102.mengde.tabell;
+package no.hvl.dat102.mengde.tabell;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

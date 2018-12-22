@@ -1,4 +1,4 @@
-package no.hib.dat102.mengde.kjedet;
+package no.hvl.dat102.mengde.kjedet;
 
 //****************************************************************
 

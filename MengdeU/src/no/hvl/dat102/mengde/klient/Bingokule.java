@@ -1,4 +1,4 @@
-package no.hib.dat102.mengde.klient;
+package no.hvl.dat102.mengde.klient;
 public class Bingokule{
 // Til å representer 'bingo-verdier' B10, N43, ... osv
 //

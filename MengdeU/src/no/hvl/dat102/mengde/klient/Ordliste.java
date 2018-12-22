@@ -1,7 +1,8 @@
-package no.hib.dat102.mengde.klient;
+package no.hvl.dat102.mengde.klient;
 
-import no.hib.dat102.mengde.adt.MengdeADT;
-import no.hib.dat102.mengde.kjedet.KjedetMengde;
+import no.hvl.dat102.mengde.adt.MengdeADT;
+import no.hvl.dat102.mengde.kjedet.KjedetMengde;
+
 import java.util.Scanner;
 
 public class Ordliste {

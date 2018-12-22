@@ -1,10 +1,11 @@
-package no.hib.dat102.mengde.kjedet;
+package no.hvl.dat102.mengde.kjedet;
 
-import no.hib.dat102.mengde.adt.*;
 //********************************************************************
 // Kjedet implementasjon av en mengde. 
 //********************************************************************
 import java.util.*;
+
+import no.hvl.dat102.mengde.adt.*;
 
 public class KjedetMengde<T> implements MengdeADT<T> {
 	private static Random rand = new Random();
