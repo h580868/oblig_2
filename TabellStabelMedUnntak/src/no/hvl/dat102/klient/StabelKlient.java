@@ -13,15 +13,13 @@ public class StabelKlient {
 			tegnStabel.push(new Character(str.charAt(i)));
 		}
 		System.out.println(str);
-		try {
-			while (!tegnStabel.erTom()) {
-				Character tegn =  tegnStabel.pop();
-				System.out.print(tegn);
-			}
-			System.out.println();
-		} catch (EmptyCollectionException ex) {
-			System.out.println(ex.getMessage());
+
+		while (!tegnStabel.erTom()) {
+			Character tegn = tegnStabel.pop();
+			System.out.print(tegn);
 		}
+		System.out.println();
+
 	}
 
 }// class

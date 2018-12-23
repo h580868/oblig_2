@@ -38,10 +38,10 @@ public class TabellStabel<T> implements StabelADT<T> {
 	/*******************************************************************
 	 * 
 	 * Fjerner toppelementet og returnerer en referanse til den. Hvis stabelen
-	 * er tom fra før, så returneres null
+	 * er tom fra før, så kastes unntak
 	 *******************************************************************/
 	@Override
-	public T pop() throws EmptyCollectionException {
+	public T pop()  {
 		//TODO
 		
 		
@@ -53,10 +53,10 @@ public class TabellStabel<T> implements StabelADT<T> {
 
 	/*******************************************************************
 	 * Returnerer toppelementet uten å fjerne det. Hvis stabelen er tom fra
-	 * før,så returneres null
+	 * før,så kastes unntak
 	 *******************************************************************/
 	@Override
-	public T peek() throws EmptyCollectionException {
+	public T peek()  {
 		if (erTom())
 			throw new EmptyCollectionException("Stabel");
 
