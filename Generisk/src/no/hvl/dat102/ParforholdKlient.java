@@ -7,11 +7,11 @@ public static void main(String[] args) {
     
     System.out.println(strPar);
     String maksStreng = strPar.maks();
-    System.out.printf("største %s%n",maksStreng);        
+    System.out.printf("stoerste %s%n",maksStreng);        
     //--------------------------------------
     System.out.println(intPar);
     int maksHeltall = intPar.maks();
-    System.out.printf("største %d%n",maksHeltall);      
+    System.out.printf("stoerste %d%n",maksHeltall);      
   }
 }
 

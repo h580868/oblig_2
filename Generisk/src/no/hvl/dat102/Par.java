@@ -39,7 +39,6 @@ public class Par<T extends Comparable<T>> implements ParForhold<T> {
 		andre = temp;
 	}
 
-	
 	public String toString() {
 		return "(" + foerste + "," + andre + ")";
 	}
@@ -51,8 +50,7 @@ public class Par<T extends Comparable<T>> implements ParForhold<T> {
 		} else {
 			return andre;
 		}
-		
+
 	} // metode
-	
-	
+
 }// class
