@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import no.hvl.dat102.EmptyCollectionException;
 import no.hvl.dat102.TabellStabel;
 import no.hvl.dat102.adt.StabelADT;
+import no.hvl.dat102.exception.EmptyCollectionException;
 
 /**
  * Test for StackADT.
@@ -137,11 +137,9 @@ public class StabelADTTest {
 	 * Trying to pop an element from an empty stabel, should give an underflow
 	 * exception.
 	 * 
-	 * @throws EmptyCollectionException
-	 *             expected exception
-	 */
+	 * 	 */
 	@Test(expected = EmptyCollectionException.class)
-	public final void popFromEmptyIsUnderflowed() throws EmptyCollectionException {
+	public final void popFromEmptyIsUnderflowed() {
 		stabel.pop();
 	}
 	

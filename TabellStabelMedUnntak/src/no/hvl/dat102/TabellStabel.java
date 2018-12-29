@@ -1,6 +1,7 @@
 package no.hvl.dat102;
 
 import no.hvl.dat102.adt.StabelADT;
+import no.hvl.dat102.exception.EmptyCollectionException;
 
 //  Tabellimplementasjon av en stabel.
 //********************************************************************
@@ -28,27 +29,44 @@ public class TabellStabel<T> implements StabelADT<T> {
 
 	/*******************************************************************
 	 * Legger til det spesifiserte elementet på toppen av stabelen, utvider
-	 * kapasitetet til stabelen hvis nødvendig.
+	 * kapasiteten til stabelen hvis nødvendig.
 	 *******************************************************************/
 	@Override
 	public void push(T element) {
-		//TODO
+		/*  TODO
+		 * 
+		 * hvis antall lik tabell-lengden, så utvid
+		 * 
+		 * sett stabelens topp-referanse til element
+		 * 
+		 * øk topp med 1
+		 * 
+		 */
 	}
 
-	/*******************************************************************
+	/*************************************************************************
 	 * 
 	 * Fjerner toppelementet og returnerer en referanse til den. Hvis stabelen
 	 * er tom fra før, så kastes unntak
-	 *******************************************************************/
+	 *************************************************************************/
 	@Override
 	public T pop()  {
-		//TODO
-		
-		
-		T result = stabel[topp];
-		stabel[topp] = null;
+		/*
+		 * TODO
+		 * 
+		 * Hvis stabel er tom, så kast unntak
+		 * 
+		 * mink topp med 1
+		 * 
+		 * sett ref.variabelen resulat lik referansen til topp-elementet
+		 * 
+		 * sett stabelens topp-referanse til null
+		 * 
+		 * returner resultat
+		 * 
+		 */			
 
-		return result;
+		return null;
 	}
 
 	/*******************************************************************
@@ -60,7 +78,7 @@ public class TabellStabel<T> implements StabelADT<T> {
 		if (erTom())
 			throw new EmptyCollectionException("Stabel");
 
-		return stabel[topp - 1];
+		return stabel[topp-1];
 	}
 
 	/*******************************************************************
