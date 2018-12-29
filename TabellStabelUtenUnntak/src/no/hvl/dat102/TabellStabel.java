@@ -36,11 +36,14 @@ public class TabellStabel<T> implements StabelADT<T> {
      */
     @Override
     public void push(T element) {
-        if (antall() == stabel.length) {
-            utvid();
-        }
-
-        //TODO
+        /*TODO
+         * hvis antall er lik tabell-lengden, så utvid
+         * 
+         * sett stabelens topp-referanse lik element
+         * 
+         * øk topp med 1
+         * 
+         */
     }
 
     /**
@@ -50,9 +53,21 @@ public class TabellStabel<T> implements StabelADT<T> {
      */
     @Override
     public T pop() {
-        T resultat = null;
-        //TODO
-        return resultat;
+    	/*TODO
+    	 * 
+    	 * initier ref.variabel resultat til null
+    	 * 
+    	 * hvis stabel ikke er tom så
+    	 *    sett resultat til stabelens topp-referanse
+    	 *    mink topp med 1
+    	 *    sett stabelens topp-referanse til null
+    	 * slutthvis
+    	 * 
+    	 * returner resultat
+    	 * 
+    	 */
+        
+        return null;
     }
 
     /**
@@ -64,7 +79,7 @@ public class TabellStabel<T> implements StabelADT<T> {
     public T peek() {
         T resultat = null;
         if (!erTom()) {
-            resultat = stabel[topp - 1];
+            resultat = stabel[topp-1];
         }
 
         return resultat;
@@ -93,14 +108,14 @@ public class TabellStabel<T> implements StabelADT<T> {
     /**
      * Returns en strengrepresentasjon av stabelen..
      * 
-     * @return stremgrepresentasjon
+     * @return strengrepresentasjon
      */
     @Override
     public String toString() {
         String resultat = "";
 
-        for (int søk = 0; søk < topp; søk++) {
-            resultat = resultat + stabel[søk].toString() + "\n";
+        for (int sok = 0; sok < topp; sok++) {
+            resultat = resultat + stabel[sok].toString() + "\n";
         }
 
         return resultat;
@@ -110,7 +125,7 @@ public class TabellStabel<T> implements StabelADT<T> {
      * Oppretter en ny tabell for å lagre innholdet.
      */
     private void utvid() {
-        T[] hjelpeTabell = (T[]) (new Object[stabel.length * 2]);
+        T[] hjelpeTabell = (T[]) (new Object[stabel.length*2]);
 
         for (int indeks = 0; indeks < stabel.length; indeks++) {
             hjelpeTabell[indeks] = stabel[indeks];
