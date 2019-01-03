@@ -64,6 +64,7 @@ public class Ansatt {
 		return KVINNE;
 	}
 
+	@Override
 	public String toString() {
 		String streng = fornavn + " " + etternavn + " " + timeloenn + " " + kvinne;
 		return streng;
