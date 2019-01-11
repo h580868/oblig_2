@@ -12,7 +12,7 @@ public class StabelKlient {
 		for (int i = 0; i < lengde; i++) {
 			tegnStabel.push(new Character(str.charAt(i)));
 		}
-		System.out.println(str);
+		//System.out.println(str);
 
 		while (!tegnStabel.erTom()) {
 			Character tegn = tegnStabel.pop();

@@ -69,10 +69,10 @@ public class TabellStabel<T> implements StabelADT<T> {
 		return null;
 	}
 
-	/*******************************************************************
+	/**********************************************************************
 	 * Returnerer toppelementet uten å fjerne det. Hvis stabelen er tom fra
 	 * før,så kastes unntak
-	 *******************************************************************/
+	 **********************************************************************/
 	@Override
 	public T peek()  {
 		if (erTom())
