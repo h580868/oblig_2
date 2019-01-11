@@ -17,9 +17,8 @@ public interface StabelADT<T> {
 
 	/**
 	 * Fjerner et element på toppen av stabelen og returnerer referansen.
-	 * Kaster unntak EmptyCollectionException hvis stabelen allerede er tom.
-	 * 
-	 * @return T element fjernes fra toppen av stabelen
+	 * @EmptyCollectionException unntak kastes hvis stabelen allerede er tom
+	 * @return T element fjernes fra toppen av stabelen og returneres
 	 * 
 	 */
 	public T pop();
@@ -27,7 +26,8 @@ public interface StabelADT<T> {
 	/**
 	 * Returnerer referansen til elementet på toppen av stabelen. Elementet blir
 	 * ikke fjernet. Kaster unntak EmptyCollectionException hvis stabelen allerede
-	 * er tom.
+	 * @EmptyCollectionException unntak kastes hvis stabelen allerede er tom
+	 * @return T element returneres fra toppen av stabelen
 	 * 
 	 */
 	public T peek();
