@@ -94,10 +94,12 @@ public class Fil {
 				CD cd = new CD(nr, artist, tittel, aar, sj, plselskap);
 
 				cda.leggTil(cd);
+				
+				// 4 - Lukk filen
+			    innfil.close();
 			}
 
-			// 4 - Lukk filen
-			innfil.close();
+			
 
 		} catch (FileNotFoundException unntak) {// arver fra IOE.. må stå først
 			                                    // hvis ikke vil unntaket for IOException skygge
