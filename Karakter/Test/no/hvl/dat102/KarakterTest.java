@@ -1,8 +1,11 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import no.hvl.dat102.FeilKarakterException;
+import no.hvl.dat102.Karakter;
 
 /**
  * Tester Karakter.
