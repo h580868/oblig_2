@@ -1,4 +1,4 @@
-package no.hib.dat102;
+package no.hvl.dat102;
 
 public class Kalkulator {
 
