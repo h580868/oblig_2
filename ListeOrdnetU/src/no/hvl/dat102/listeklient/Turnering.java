@@ -23,10 +23,10 @@ public class Turnering {
 
 		for (int antall = 1; antall <= antallLag; antall++) {
 			System.out.print("Oppgi navn til lag:");
-			navn = in.nextLine();  //Kunstig innlesing
+			navn = in.nextLine();  
 			System.out.print("Oppgi antall seire:");
 			antallSeire = in.nextInt();
-			in.nextLine();			
+			in.nextLine();	//Leser resten av linjen		
 			turnering.leggTil(new Lag(navn, antallSeire));
 		}
 
