@@ -22,6 +22,7 @@ public class KjedetOrdnetListe<T extends Comparable<T>> implements OrdnetListeAD
 	public T fjernFoerste() {
 		T svar = null;
 		//...Fyll ut
+		
 		return svar;
 	}
 

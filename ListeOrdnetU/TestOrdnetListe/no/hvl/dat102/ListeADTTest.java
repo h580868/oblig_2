@@ -29,7 +29,7 @@ public class ListeADTTest {
 	 * @throws Exception exception
 	 */
 	@Before
-	public final void setup() throws Exception {
+	public final void setup() {
 		liste = new KjedetOrdnetListe<Integer>();
 	}
 
