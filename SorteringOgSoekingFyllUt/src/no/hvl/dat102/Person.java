@@ -3,21 +3,21 @@ package no.hvl.dat102;
 public class Person implements Comparable<Person> {
 	private String fornavn;
 	private String etternavn;
-	
 
 	public Person() {
-		this("","");
-		
+		this("", "");
+
 	}
+
 	public Person(String fornavn, String etternavn) {
 		this.fornavn = fornavn;
 		this.etternavn = etternavn;
-		
+
 	}
 
-	// Returnerer en kontakt som en strengrepresentasjon.
+	// Returnerer en person som en strengrepresentasjon.
 	public String toString() {
-		return (etternavn + ", " + fornavn + "\t"); 
+		return (etternavn + ", " + fornavn + "\t");
 	}// metode
 
 	// Bruker etternavn og fornavn for aa bestemme en
@@ -33,4 +33,4 @@ public class Person implements Comparable<Person> {
 		return resultat;
 	}// metode
 
-}// class Kontakt
+}// class

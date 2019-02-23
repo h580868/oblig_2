@@ -74,25 +74,10 @@ public class SoekingOgSortering {
 	 * @return sann om elementet ble funnet ellers usann.
 	 */
 
+	
+
 	// Alt 1
-	public static <T extends Comparable<T>> boolean binaerSoek(T[] data, int min, int maks, T element) {
-
-		boolean funnet = false;
-		int midtpunkt = (min + maks) / 2;
-		if (data[midtpunkt].compareTo(element) == 0) {
-			funnet = true;
-		} else if (data[midtpunkt].compareTo(element) > 0) {
-			if (min <= midtpunkt - 1) {
-				funnet = binaerSoek(data, min, midtpunkt - 1, element);
-			}
-		} else if (midtpunkt + 1 <= maks) {
-			funnet = binaerSoek(data, midtpunkt + 1, maks, element);
-		}
-		return funnet;
-	}// metode
-
-	// Alt 2
-	public static <T extends Comparable<T>> boolean binaerSoek2(T[] data, int min, int maks, T el) {
+	public static <T extends Comparable<T>> boolean binaerSoek1(T[] data, int min, int maks, T el) {
 		boolean funnet;
 		int midtpunkt = (min + maks) / 2;
 		int resultat = el.compareTo(data[midtpunkt]);
@@ -102,9 +87,9 @@ public class SoekingOgSortering {
 		} else if (resultat == 0) {
 			funnet = true;
 		} else if (resultat < 0) {
-			funnet = binaerSoek2(data, min, midtpunkt - 1, el);
+			funnet = binaerSoek1(data, min, midtpunkt - 1, el);
 		} else {
-			funnet = binaerSoek2(data, midtpunkt + 1, maks, el);
+			funnet = binaerSoek1(data, midtpunkt + 1, maks, el);
 		}
 
 		return funnet;
@@ -112,8 +97,8 @@ public class SoekingOgSortering {
 	}
 
 	/* Rekursiv binærsøk som returnerer indeks */
-	// Alt 3
-	public static <T extends Comparable<T>> int binaerSoek3(T[] data, int min, int maks, T el) {
+	// Alt 2
+	public static <T extends Comparable<T>> int binaerSoek2(T[] data, int min, int maks, T el) {
 		// Returnerer indeksen til målelementet hvis det fins ellers -1
 		if (min > maks) { // basistilfelle, ingen element
 			return -1;
@@ -125,15 +110,15 @@ public class SoekingOgSortering {
 			return midtpunkt;
 		}
 		if (resultat < 0) {// ( vil her også fungere med else if)
-			return binaerSoek3(data, min, midtpunkt - 1, el);
+			return binaerSoek2(data, min, midtpunkt - 1, el);
 		} else { // resultat > 0
-			return binaerSoek3(data, midtpunkt + 1, maks, el);
+			return binaerSoek2(data, midtpunkt + 1, maks, el);
 		}
 	}// metode
 
 	/* Ikke rekursiv binærsøk som returnerer indeks */
-	// Alt 4
-	public static <T extends Comparable<T>> int binaerSoek4(T[] data, int min, int maks, T el) {
+	// Alt 3 -fyll ut
+	public static <T extends Comparable<T>> int binaerSoek3(T[] data, int min, int maks, T el) {
 		return maks;
 		// Returnerer indeksen til målelementet hvis det fins ellers -1
 		// Fyll ut og kjør metoden
@@ -144,12 +129,12 @@ public class SoekingOgSortering {
 	/*************************************************************************************************/
 
 	/**
-	 * Utvalgsortering
+	 * Utvalgssortering
 	 * 
 	 * @param data
 	 *            er data som skal sorteres
 	 */
-	public static <T extends Comparable<T>> void utvalgSortering(T[] data) {
+	public static <T extends Comparable<T>> void utvalgssortering(T[] data) {
 		int minste;
 		T temp;
 		for (int neste = 0; neste < data.length - 1; neste++) {
