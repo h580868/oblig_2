@@ -15,7 +15,7 @@ public class KlientPersonliste {
 		/**************************************************/
 		Person[] personerS = new Person[7];
 		for (int i = 0; i <= personerS.length - 1; i++) {
-			personerS[i] = personer[i];
+			  personerS[i] = personer[i];
 		}
 
 		// Utskrift av data
