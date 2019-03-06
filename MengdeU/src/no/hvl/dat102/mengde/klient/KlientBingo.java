@@ -32,15 +32,15 @@ public class KlientBingo {
 		if (minMengde1.equals(minMengde2)) {
 			System.out.println("Like mengder");
 		}
-/*      Her må du først implementere ferdig fjern-metoden!
+		// Her må du først implementere ferdig fjern-metoden!
 		kule2 = minMengde1.fjern(kule1);
 		if (kule2 != null) {// da er den fjernet
 			if (minMengde1.equals(minMengde2)) {
 				System.out.println("Like mengder");
-			}else {
-					System.out.println("Ulike mengder");
-				}
+			} else {
+				System.out.println("Ulike mengder");
 			}
-		*/
+		}
+
 	}
 }// class
