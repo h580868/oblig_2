@@ -4,7 +4,7 @@ public class Hobby {
 	private String hobbyNavn;
 
 	public Hobby(String hobby) {
-		hobbyNavn = hobby;
+		hobbyNavn = hobby.toLowerCase();
 	}
 
 	public String getHobbyNavn() {
@@ -12,7 +12,7 @@ public class Hobby {
 	}
 
 	public void setHobbyNavn(String hobbyNavn) {
-		this.hobbyNavn = hobbyNavn;
+		this.hobbyNavn = hobbyNavn.toLowerCase();
 	}
 
 	public String toString() {

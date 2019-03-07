@@ -96,8 +96,8 @@ public class TabellMengde<T> implements MengdeADT<T> {
 	 * while (teller.hasNext()) { begge.leggTil(teller.next()); } return
 	 * (MengdeADT<T>)begge; }
 	 */
+	
 	@Override
-
 	public MengdeADT<T> union(MengdeADT<T> m2) {
 		MengdeADT<T> begge = new TabellMengde<T>();
 
@@ -193,13 +193,14 @@ public class TabellMengde<T> implements MengdeADT<T> {
 		return differensM;
 	}
 
+	/*
 	private void settInn(T element) {
 		if (antall == tab.length) {
 			utvidKapasitet();
 		}
 		tab[antall] = element;
 		antall++;
-	}
+	} */
 
 	@Override
 	public boolean inneholder(T element) {
