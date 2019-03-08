@@ -3,19 +3,19 @@ package no.hvl.dat102;
 import java.io.*;
 
 public class Balansering {
-	// Her opphever du kommentarsetning når du har fått lagt inn
-	// nødvendig kode
-	// SirkulaerStabel<Parentesinfo>stabel = new
+	// Her opphever du kommentarsetning naar du har faat lagt inn
+	// noevendig kode
+	//SirkulaerStabel<Parentesinfo>stabel = new
 	// SirkulaerStabel<Parentesinfo>();
 
-	private boolean passer(char åpent, char lukket) {
-		switch (åpent) {
+	private boolean passer(char open, char close) {
+		switch (open) {
 		case '(':
-			return (lukket == ')');
+			return (close == ')');
 		case '[':
-			return (lukket == ']');
+			return (close == ']');
 		case '{':
-			return (lukket == '}');
+			return (close == '}');
 		default:
 			return false;
 		}
@@ -33,7 +33,7 @@ public class Balansering {
 		try {
 			tekstFilLeser = new FileReader(filnavn);
 		} catch (FileNotFoundException unntak) {
-			System.out.println("Finner ike filen!");
+			System.out.println("Finner ikke filen!");
 			System.exit(-1);
 		}
 
@@ -43,9 +43,10 @@ public class Balansering {
 		try {
 			linje = tekstLeser.readLine();
 			while (linje != null) {
-				// kalle metode her!
-				// Fyll ut
-
+				for (int i = 0; i < linje.length(); i++) {
+					
+				}
+				linjenr++;
 			} // while
 		}
 
